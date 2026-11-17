@@ -83,3 +83,31 @@ nav img {
   height: auto;
 }
 
+
+/* Position the menu on the left */
+nav {
+  position: fixed;
+  top: 100px;
+  left: 25px;
+}
+
+/* Move homepage content to the right */
+main {
+  margin-left: 300px;
+  margin-right: 40px;
+  max-width: none;
+}
+
+/* Keep the layout usable on phones */
+@media (max-width: 700px) {
+  nav {
+    position: static;
+    margin: 15px auto;
+  }
+
+  main {
+    margin: 20px;
+  }
+}
+
+
