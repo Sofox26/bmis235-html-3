@@ -111,3 +111,20 @@ main {
 }
 
 
+/* Updated blue theme */
+
+body {
+    background-color: #EAF6FF;
+    color: #243B53;
+}
+
+nav {
+    background-color: #1E3A5F;
+}
+
+h1 {
+    color: #2B5D8C;
+}
+
+
+
