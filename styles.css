@@ -57,3 +57,29 @@ footer {
     color: #777777;
     margin-top: 40px;
 }
+
+
+/* Vertical family navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 180px;
+  padding: 20px;
+  background-color: #1E3A5F;
+  border-radius: 12px;
+}
+
+nav a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+nav img {
+  max-width: 100%;
+  height: auto;
+}
+
