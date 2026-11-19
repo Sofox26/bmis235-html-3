@@ -298,6 +298,58 @@ img[src="img/IMG_7358.jpeg"] {
 }
 
 
+/* Interactive family photo gallery */
+
+.photo-gallery {
+    background-color: #d9ecff;
+    border: 3px solid #8bbce8;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#galleryPhoto {
+    display: block;
+    width: 350px !important;
+    height: 300px !important;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+#galleryCaption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #234d78;
+    margin: 15px 0;
+}
+
+.gallery-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-buttons button {
+    background-color: #234d78;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.gallery-buttons button:hover {
+    background-color: #467db2;
+}
+
+
+
 
 
 
