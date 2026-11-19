@@ -49,6 +49,109 @@ Each of them plays a special role in my life!</p>.</p>
      ===================================================================== -->
 
 <div class="showcase">
+  
+<!-- HTML: Interactive family fun-fact cards -->
+<div class="family-game">
+  <h2>Get to Know the Fox Family!</h2>
+  <div class="family-card-buttons">
+    <button type="button" onclick="showFamilyFact('mom')">
+      🏃‍♀️ Mom
+    </button>
+    <button type="button" onclick="showFamilyFact('dad')">
+      🦷 Dad
+    </button>
+    <button type="button" onclick="showFamilyFact('jake')">
+      🏀 Jake
+    </button>
+  </div>
+
+  <div class="family-fact-display" id="familyFactDisplay">
+    Click a family member to discover a fun fact!
+  </div>
+</div>
+
+<!-- CSS: Styles only the interactive showcase game -->
+<style>
+.showcase .family-game {
+  background: #d9ecff;
+  border: 3px solid #8bbce8;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 500px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+.showcase .family-game h2 {
+  color: #234d78;
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+
+.showcase .family-card-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.showcase .family-card-buttons button {
+  background: #234d78;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.showcase .family-card-buttons button:hover,
+.showcase .family-card-buttons button:focus {
+  background: #467db2;
+}
+
+.showcase .family-fact-display {
+  background: white;
+  color: #234d78;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 20px;
+  min-height: 55px;
+  font-size: 17px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  .showcase .family-game {
+    padding: 12px;
+    width: 100%;
+  }
+
+  .showcase .family-card-buttons button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+</style>
+
+<!-- JavaScript: Shows a fact when a button is clicked -->
+<script>
+function showFamilyFact(person) {
+  const facts = {
+    mom: "Lucita ran track at Washington State University and is now a Spanish teacher!",
+    dad: "Ryan graduated from the University of Washington and became a dentist!",
+    jake: "Jake is an athletic basketball player who loves competition!"
+  };
+
+  document.getElementById("familyFactDisplay").textContent =
+    facts[person];
+}
+</script>
+
   <h2>Our Family Photo Gallery!</h2>
 
   <div class="photo-gallery">
