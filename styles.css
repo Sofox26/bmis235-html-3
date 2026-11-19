@@ -224,6 +224,53 @@ h1 {
 }
 
 
+/* Fix sidebar covering text on all pages */
+
+nav {
+    position: fixed;
+    top: 150px;
+    left: 30px;
+    width: 220px;
+    z-index: 10;
+}
+
+/* Move all page content away from sidebar */
+
+main {
+    margin-left: 320px;
+    margin-right: 40px;
+}
+
+/* Keep headings and paragraphs aligned */
+
+main h1,
+main h2,
+main h3,
+main p {
+    margin-left: 0;
+}
+
+/* Keep page headings centered */
+
+main h1 {
+    text-align: center;
+}
+
+/* Make the layout work on smaller screens */
+
+@media (max-width: 700px) {
+    nav {
+        position: static;
+        width: auto;
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
 
 
 
