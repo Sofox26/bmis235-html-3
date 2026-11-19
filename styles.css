@@ -91,13 +91,6 @@ nav {
   left: 25px;
 }
 
-/* Move homepage content to the right */
-main {
-  margin-left: 300px;
-  margin-right: 40px;
-  max-width: none;
-}
-
 /* Keep the layout usable on phones */
 @media (max-width: 700px) {
   nav {
@@ -155,10 +148,6 @@ main {
 }
 
 /* Keep headings and text aligned */
-main h1,
-main h2,
-main p {
-  text-align: left;
 }
 
 /* Keep the page title centered */
@@ -179,23 +168,7 @@ nav {
 
 /* Move all page content to the right */
 
-main {
-  margin-left: 330px;
-  margin-right: 40px;
-  padding: 20px;
-  box-sizing: border-box;
-}
 
-/* Make section headings fit properly */
-
-main h2 {
-  color: #2b5d8c;
-  text-align: left;
-  margin-top: 35px;
-  margin-bottom: 15px;
-}
-
-/* Make paragraphs easier to read */
 
 main p {
   line-height: 1.7;
