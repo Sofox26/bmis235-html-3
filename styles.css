@@ -148,4 +148,24 @@ nav a:hover {
 }
 
 
+/* Move page content away from sidebar */
+main {
+  margin-left: 330px;
+  margin-right: 30px;
+}
+
+/* Keep headings and text aligned */
+main h1,
+main h2,
+main p {
+  text-align: left;
+}
+
+/* Keep the page title centered */
+h1 {
+  text-align: center;
+}
+
+
+
 
