@@ -47,7 +47,64 @@ Each of them plays a special role in my life!</p>.</p>
      This box is empty on purpose. In Part 7 you paste an interactive
      graphic BETWEEN the opening <div> and the closing </div> below.
      ===================================================================== -->
-<div class="showcase"></div>
+
+<div class="showcase">
+  <h2>Our Family Photo Gallery!</h2>
+
+  <div class="photo-gallery">
+    <img id="galleryPhoto"
+         src="img/IMG_7358.jpeg"
+         alt="The Fox Family">
+
+    <p id="galleryCaption">The Fox Family</p>
+
+    <div class="gallery-buttons">
+      <button type="button" onclick="changePhoto(-1)">
+        &#10094; Previous
+      </button>
+
+      <button type="button" onclick="changePhoto(1)">
+        Next &#10095;
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const familyPhotos = [
+    {
+      src: "img/IMG_7358.jpeg",
+      caption: "The Fox Family"
+    },
+    {
+      src: "img/IMG_5533.jpeg",
+      caption: "Lucita Fox"
+    },
+    {
+      src: "img/IMG_6247.jpeg",
+      caption: "Ryan Fox"
+    },
+    {
+      src: "img/IMG_6246.jpeg",
+      caption: "Jake Fox"
+    }
+  ];
+
+  let currentPhoto = 0;
+
+  function changePhoto(direction) {
+    currentPhoto =
+      (currentPhoto + direction + familyPhotos.length)
+      % familyPhotos.length;
+
+    document.getElementById("galleryPhoto").src =
+      familyPhotos[currentPhoto].src;
+
+    document.getElementById("galleryCaption").textContent =
+      familyPhotos[currentPhoto].caption;
+  }
+</script>
+
 
 <!-- Footer: fill in your name -->
 <footer>Built by Sofia Fox &middot; BMIS 235</footer>
