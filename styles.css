@@ -310,16 +310,18 @@ img[src="img/IMG_7358.jpeg"] {
     text-align: center;
 }
 
+    
 #galleryPhoto {
     display: block;
     width: 350px !important;
     height: 300px !important;
     max-width: 100%;
-    object-fit: cover;
+    object-fit: cover !important;
     object-position: center;
     border-radius: 12px;
     margin: 0 auto;
 }
+
 
 #galleryCaption {
     font-size: 20px;
