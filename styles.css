@@ -287,6 +287,18 @@ main p {
 }
 
 
+/* Make homepage family picture smaller */
+img[src="img/IMG_7358.jpeg"] {
+    width: 250px !important;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+
+
 
 
 
